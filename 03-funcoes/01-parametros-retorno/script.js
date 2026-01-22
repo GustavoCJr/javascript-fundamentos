@@ -22,13 +22,10 @@ function media3(n1, n2, n3) {
 }
 
 function maior(a, b) {
-  if (a > b) {
-    return a;
-  } else if (b > a) {
-    return b;
-  }
-  return "Iguais";
+  if (a === b) return "IGUAIS";
+  return a > b ? a : b;
 }
+
 function calculaDesconto(preco, percentual) {
   if (preco > 0 && percentual > 0 && percentual < 100) {
     return preco - preco * (percentual / 100);
