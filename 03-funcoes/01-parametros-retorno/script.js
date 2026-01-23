@@ -1,5 +1,5 @@
 /*
-Crie a função soma(a, b) que retorna a soma. 
+Exercicios para treino de retorno de parametros
 */
 function validarNum(num) {
   return typeof num === "number";
