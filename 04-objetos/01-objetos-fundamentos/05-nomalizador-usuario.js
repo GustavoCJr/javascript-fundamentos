@@ -7,6 +7,7 @@ const usuario = {
   },
   skills: ["JavaScript", "Python", "Java", "C"],
 };
+
 function normalizarUsuario(usuario) {
   return {
     nome: usuario.nome.toUpperCase(),
@@ -14,8 +15,9 @@ function normalizarUsuario(usuario) {
       usuario.endereco.cidade[0].toUpperCase() +
       usuario.endereco.cidade.slice(1),
     uf: usuario.endereco.uf.toUpperCase(),
-    totalSkills: usuario.skills.lenght,
+    totalSkills: usuario.skills.length,
   };
 }
+
 const resultado = normalizarUsuario(usuario);
 console.log(resultado);
