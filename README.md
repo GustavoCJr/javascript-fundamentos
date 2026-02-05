@@ -8,6 +8,7 @@ JavaScript puro, sem frameworks.
 - Condicionais
 - Laços de repetição
 - Funções
+- Objetos
 - Resolução de problemas
 
 ## Objetivo
