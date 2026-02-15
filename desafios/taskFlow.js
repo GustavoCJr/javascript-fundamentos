@@ -209,17 +209,17 @@ app.criarTarefa({
 
 app.toggleConcluida("t1");
 
-console.log(app.buscar("proto").length); // 1
-console.log(app.filtrar({ concluida: true }).length); // 1
-console.log(app.filtrar({ prioridade: "media" }).length); // 1
-console.log(app.filtrar({ tag: "js" }).length); // 1
+console.log(app.buscar("proto").length);
+console.log(app.filtrar({ concluida: true }).length);
+console.log(app.filtrar({ prioridade: "media" }).length);
+console.log(app.filtrar({ tag: "js" }).length);
 
 const stats = app.estatisticas();
-console.log(stats.total, stats.concluidas, stats.pendentes); // 2 1 1
-console.log(stats.porPrioridade); // { baixa: 0, media: 1, alta: 1 }
-console.log(stats.topTags[0][0]); // "js"
+console.log(stats.total, stats.concluidas, stats.pendentes);
+console.log(stats.porPrioridade);
+console.log(stats.topTags[0][0]);
 
 const dump = app.exportar();
 const app2 = criarTaskFlow("Clone");
-console.log(app2.importar(dump)); // 2
-console.log(app2.estatisticas().total); // 2
+console.log(app2.importar(dump));
+console.log(app2.estatisticas().total);
